@@ -1,0 +1,43 @@
+.movie-detail {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.movie {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 500px;
+		background-color: #fff;
+	}
+
+	.title-area {
+		padding: 20px 0;
+		.title {
+			font-size: 22px;
+			color: #181818;
+		}
+	}
+
+	.info-area {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0;
+
+		.movie-title {
+			font-size: 18px;
+		}
+
+		.rating {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+	.genres-list {
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+}

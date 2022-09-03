@@ -1,0 +1,48 @@
+.movie-area {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 80%;
+	margin: 0 auto;
+
+	color: #181818;
+
+	.movie {
+		width: calc(100% / 3 - 20px);
+		padding: 10px;
+		box-sizing: border-box;
+		background-color: #ebe6d5;
+	}
+
+	.movie-title {
+		display: block;
+		padding: 20px 0;
+		font-size: 22px;
+		@include ellipsis;
+	}
+
+	.content {
+		margin-top: 20px;
+	}
+
+	.img-box {
+		width: 100%;
+		height: auto;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.genres {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.summary {
+		@include multi-ellipsis(16, 1, 3);
+	}
+}
